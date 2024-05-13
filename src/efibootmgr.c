@@ -1860,7 +1860,7 @@ main(int argc, char **argv)
 	set_default_opts();
 	parse_opts(argc, argv);
 	if (opts.showversion) {
-		printf("version %s\n", EFIBOOTMGR_VERSION);
+		printf("version %s - patched for PXE BootOptions gereration\n", EFIBOOTMGR_VERSION);
 		return 0;
 	}
 
