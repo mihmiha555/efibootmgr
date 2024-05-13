@@ -189,7 +189,7 @@ make_linux_load_option(uint8_t **data, size_t *data_size,
 			return -1;
 		}
 		if (data_size && *data_size) {
-			dp = malloc(needed);
+			dp = calloc(needed, 1);
 
 			needed = efi_generate_ipv4_device_path(
 							(uint8_t *)dp, needed,
